@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alok Raj</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@100&display=swap" rel="stylesheet">
+<style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-image: url('https://cdn.pixabay.com/photo/2023/10/27/10/49/australian-king-parrot-8345064_1280.jpg');
+            background-size: cover;
+            background-position: center;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1000px;
+            width: 100%;
+            padding: 40px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            overflow: hidden;
+            animation: splash 1s ease-out;
+        }
+
+        @keyframes splash {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .container img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid #fff;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+            transform: scale(1);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .container img:hover {
+            transform: scale(1.1);
+        }
+
+        .content {
+            flex: 1;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin: 20px 0;
+            color: #25274d;
+        }
+
+        span {
+            font-size: 1.2rem;
+            margin: 20px 0;
+            color: #555;
+            display: block;
+        }
+
+        .highlight {
+            color: #ff6b6b;
+        }
+
+        .social-icons {
+            text-align: center;
+        }
+
+        .social-icons a {
+            font-size: 1.5rem;
+            color: #25274d;
+            margin: 0 15px;
+            text-decoration: none;
+            transition: color 0.3s ease-in-out;
+        }
+
+        .social-icons a:hover {
+            color: #ff6b6b;
+        }
+
+        .contact-me {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .contact-me button {
+            background-color: #ff6b6b;
+            color: #fff;
+            padding: 15px 25px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out;
+            font-size: 1.2rem;
+            letter-spacing: 1px;
+            outline: none;
+        }
+
+        .contact-me button:hover {
+            background-color: #25274d;
+        }
+
+        .email-container {
+            display: none;
+            margin-top: 10px;
+        }
+
+        .email-container span {
+            font-size: 1.2rem;
+            color: #555;
+            display: block;
+        }
+
+        .email-container a {
+            color: #25274d;
+            text-decoration: none;
+            transition: color 0.3s ease-in-out;
+        }
+
+        .email-container a:hover {
+            color: #ff6b6b;
+        }
+
+        @media (max-width: 767px) {
+            .container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .container img {
+                margin-top: 30px;
+                margin-bottom: 20px;
+            }
+
+            .content {
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <img src="https://media.licdn.com/dms/image/D4D03AQGU4GKFkmaGpQ/profile-displayphoto-shrink_400_400/0/1693058885225?e=1704931200&v=beta&t=qalzXk97HR5d6GRwazlIpGDL2PlHPJz_OuZyjJm8IgA" alt="Sai Image">
+        <div class="content">
+            <h1>Alok Raj</h1>
+            <span class="highlight">Dancer | Actor | Web developer</span>
+            <span>
+              I am a student in silicon institute of technology from computer science and engineering branch.i love to dance and act.i always try to do my best in every field.
+            </span>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/sai-sangita-adhek-822687259">LinkedIn</a>
+                <a href="https://www.instagram.com/_crazy.dancer_/">Instagram</a>
+                <a href="https://github.com/saisangita05/">GitHub</a>
+
+            </div>
+            <div class="contact-me">
+                <button onclick="window.location.href='mailto:saisangita.adhek05@gmail.com';">Say hi</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+    </script>
+</body>
+
+</html>
